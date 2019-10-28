@@ -163,7 +163,7 @@ env.get_checkpoint_config().set_prefer_checkpoint_for_recovery(True)
 {% top %}
 
 
-## Selecting a State Backend
+## 选择一个 State Backend
 
 Flink 的 [checkpointing 机制]({{ site.baseurl }}/zh/internals/stream_checkpointing.html) 会将 timer 以及 stateful 的 operator 进行快照，然后存储下来，
 包括连接器（connectors），窗口（windows）以及任何用户[自定义的状态](state.html)。
